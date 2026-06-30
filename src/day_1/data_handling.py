@@ -1,8 +1,12 @@
-from input_file import get_expense
-
 expenses = []
 
-expense = get_expense()
-expenses.append(expense)
+def add_expense(expense):
+    expenses.append(expense)
 
-print(expenses)
+
+def delete_expense(index):
+    if 0 <= index < len(expenses):
+        expenses.pop(index)
+        print("Expense Deleted Successfully.")
+    else:
+        print("Invalid Expense Number.")
