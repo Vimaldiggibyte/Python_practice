@@ -1,25 +1,56 @@
-import random
-
-# Generate a random number between 1 and 100
-secret_number = random.randint(1, 100)
-
-attempts = 0
+from game import start_game
 
 print("=== Number Guessing Game ===")
-print("I have selected a number between 1 and 100.")
 
 while True:
-    guess = int(input("Enter your guess: "))
-    attempts += 1
+    start_game()
 
-    if guess < secret_number:
-        print("Too Low! Try again.")
+    choice = input("\nDo you want to play again? (y/n): ").lower()
 
-    elif guess > secret_number:
-        print("Too High! Try again.")
+    if choice != "y":
+        print("Thanks for playing!")
+        breakfrom game import start_game
 
-    else:
-        print("\nCongratulations!")
-        print(f"You guessed the correct number: {secret_number}")
-        print(f"You took {attempts} attempts.")
+print("=== Number Guessing Game ===")
+
+while True:
+    start_game()
+
+    choice = input("\nDo you want to play again? (y/n): ").lower()
+
+    if choice != "y":
+        print("Thanks for playing!")
+        breakfrom game import start_game
+
+print("=== Number Guessing Game ===")
+
+while True:
+    start_game()
+
+    choice = input("\nDo you want to play again? (y/n): ").lower()
+
+    if choice != "y":
+        print("Thanks for playing!")
+        breakfrom game import start_game
+
+print("=== Number Guessing Game ===")
+
+while True:
+    start_game()
+
+    choice = input("\nDo you want to play again? (y/n): ").lower()
+
+    if choice != "y":
+        print("Thanks for playing!")
+        breakfrom game import start_game
+
+print("=== Number Guessing Game ===")
+
+while True:
+    start_game()
+
+    choice = input("\nDo you want to play again? (y/n): ").lower()
+
+    if choice != "y":
+        print("Thanks for playing!")
         break
