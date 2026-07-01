@@ -1,56 +1,20 @@
 from game import start_game
 
-print("=== Number Guessing Game ===")
 
-while True:
-    start_game()
+def main():
+    print("=" * 35)
+    print("    NUMBER GUESSING GAME")
+    print("=" * 35)
 
-    choice = input("\nDo you want to play again? (y/n): ").lower()
+    while True:
+        start_game()
 
-    if choice != "y":
-        print("Thanks for playing!")
-        breakfrom game import start_game
+        choice = input("\nDo you want to play again? (y/n): ").strip().lower()
 
-print("=== Number Guessing Game ===")
+        if choice != "y":
+            print("\nThank you for playing!")
+            break
 
-while True:
-    start_game()
 
-    choice = input("\nDo you want to play again? (y/n): ").lower()
-
-    if choice != "y":
-        print("Thanks for playing!")
-        breakfrom game import start_game
-
-print("=== Number Guessing Game ===")
-
-while True:
-    start_game()
-
-    choice = input("\nDo you want to play again? (y/n): ").lower()
-
-    if choice != "y":
-        print("Thanks for playing!")
-        breakfrom game import start_game
-
-print("=== Number Guessing Game ===")
-
-while True:
-    start_game()
-
-    choice = input("\nDo you want to play again? (y/n): ").lower()
-
-    if choice != "y":
-        print("Thanks for playing!")
-        breakfrom game import start_game
-
-print("=== Number Guessing Game ===")
-
-while True:
-    start_game()
-
-    choice = input("\nDo you want to play again? (y/n): ").lower()
-
-    if choice != "y":
-        print("Thanks for playing!")
-        break
+if __name__ == "__main__":
+    main()
